@@ -1,10 +1,15 @@
 "use client"; // This is a client component 👈🏽
 
 // React/Next.js
+<<<<<<< HEAD
 import Head from "next/head";
 import { useState } from "react";
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
+=======
+import { useState } from "react";
+import Link from 'next/link'
+>>>>>>> f0ad534 (WIP)
 import 'swiper/css'
 
 // Media
@@ -15,6 +20,7 @@ import {
   AiFillInstagram
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+<<<<<<< HEAD
 import aman_pic_light from "../public/Choudhary_Aman_Photo.jpg"
 import aman_pic_dark from "../public/prof_pic.jpg"
 import beach from "../public/IMG_8139.jpg"
@@ -22,16 +28,15 @@ import annarbor from "../public/_MG_3451.jpg"
 
 
 import code from "../public/code.png";
+=======
+
+import aman_pic_light from "../public/Choudhary_Aman_Photo.jpg"
+import aman_pic_dark from "../public/prof_pic.jpg"
+>>>>>>> f0ad534 (WIP)
 import trashbots from "../public/trashbots.jpg";
 import criteo from "../public/criteo.png";
 import deepgram from "../public/deepgram.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -169,7 +174,11 @@ export default function Home() {
         <section className="mt:10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
+<<<<<<< HEAD
             <h3 className="text-xl py-1 dark:text-white ">University of Michigan '24, B.S.E in Computer Science and Engineering</h3>
+=======
+            <h3 className="text-xl py-1 dark:text-white ">University of Michigan &apos;24, B.S.E in Computer Science and Engineering</h3>
+>>>>>>> f0ad534 (WIP)
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               {"What's up! I'm a fourth year computer science student at the University of Michigan. \
                 When I'm not on campus in Ann Arbor, Michigan, you'll probably find me at home in San \
