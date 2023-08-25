@@ -10,7 +10,8 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
   AiTwotoneMail,
-  AiFillInstagram
+  AiFillInstagram,
+  AiFillGithub
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { Fade } from 'react-slideshow-image';
@@ -42,24 +43,22 @@ export default function Home() {
             <a href="#" className="text-xl">Aman Choudhary</a>
             <ul className="flex items-center">
               <li className="text-lg px-3 border-none">
-                <Link href="#" className="">
-                  About Me
-                </Link>
+                <a href="#AboutMe">About Me</a>
               </li>
               <li className="text-lg px-3 border-none">
-                <Link href="#" className="">
+                <a href="#WorkExperience">
                   Work Experience
-                </Link>
+                </a>
               </li>
               <li className="text-lg px-3 border-none">
-                <Link href="#" className="">
+                <a href="#Projects">
                   Projects
-                </Link>
+                </a>
               </li>
               <li className="text-lg px-3 border-none">
-                <Link href="#" className="">
+                <a href="#Contact">
                   Contact
-                </Link>
+                </a>
               </li>
               <li className="text-lg px-3 border-none">
                 <Link href="/music" className="">
@@ -75,7 +74,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-4"
-                  href="#">
+                  href="Aman_Choudhary_Resume.pdf" target="_blank">
                   Resume
                 </a>
               </li>
@@ -92,10 +91,11 @@ export default function Home() {
               Computer Science Student @ <a href="https://umich.edu/" className="text-teal-500">University of Michigan</a>
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://www.linkedin.com/in/aman-ch/"><AiFillLinkedin /></a>
-              <a href="https://www.youtube.com/channel/UCc6UbZ6n4gCH5CDuyPPfjwg"><AiFillYoutube /></a>
-              <a href="mailto:amanch@umich.edu"><AiTwotoneMail /></a>
-              <a href="https://www.instagram.com/a_man_photoz/"><AiFillInstagram /></a>
+              <a href="mailto:amanch@umich.edu" target="_blank"><AiTwotoneMail /></a>
+              <a href="https://www.linkedin.com/in/aman-ch/" target="_blank"><AiFillLinkedin /></a>
+              {/* <a href="https://www.youtube.com/channel/UCc6UbZ6n4gCH5CDuyPPfjwg" target="_blank"><AiFillYoutube /></a>
+              <a href="https://www.instagram.com/a_man_photoz/" target="_blank"><AiFillInstagram /></a> */}
+              <a href="https://github.com/AmanChoudhary2020/" target="_blank"><AiFillGithub /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full  relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Fade arrows={false} duration={3000}>
@@ -111,14 +111,14 @@ export default function Home() {
 
         <section className="mt:10">
           {/* ABOUT ME */}
-          <div className="pb-3">
-            <h3 className="text-3xl py-1 dark:text-white ">
+          <div id="AboutMe" className="pb-3">
+            <h3 className="text-3xl py-1 pb-4 dark:text-white ">
               About Me
             </h3>
 
-            <h3 className="text-l py-2 dark:text-white ">
+            {/* <h3 className="text-l py-2 dark:text-white ">
               University of Michigan &apos;24, B.S.E in Computer Science and Engineering
-            </h3>
+            </h3> */}
 
             <p className="text-md leading-5 pb-2 text-gray-800 dark:text-gray-200">
               Born and raised in the heart of Silicon Valley, I am an aspiring software
@@ -127,11 +127,11 @@ export default function Home() {
               data engineering, and machine learning.
             </p>
             <p>In my free time, I enjoy playing guitar and
-              shooting photography &#x1F4F7;</p>
+              shooting photography &#x1F4F7;. Check out my guitar solo in a <a href="https://www.youtube.com/watch?v=CQI5q4grxjA&t=88s" target="_blank" className="text-teal-500 hover:underline">tune</a> my buddies and I wrote!</p>
           </div>
 
           {/* WORK EXPERIENCE */}
-          <h3 className="text-3xl py-1 dark:text-white">
+          <h3 id="WorkExperience" className="text-3xl py-1 dark:text-white">
             Work Experience
           </h3>
 
@@ -192,27 +192,64 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-10">
+        <section id="Projects" className="py-10">
           <h3 className="text-3xl pb-5 py-1">Projects</h3>
-          <div class="grid grid-cols-3 gap-10">
-            <a
-              className="shadow-lg bg-gradient-to-br hover:bg-gradient-to-r from-sky-50 to-sky-200 px-400 py-20 text-center border-none rounded-md"
-              href="#">
-              Search Engine
+          <div className="grid grid-cols-3 gap-10">
+            <a className="group rounded-md text-center"
+              href="https://github.com/AmanChoudhary2020/nn-from-scratch" target="_blank">
+              <img class="group-hover:opacity-10 rounded-lg object-cover shadow-lg "
+                width={"100%"}
+                height={"100%"}
+                src="nn.jpg" />
+              {/* <div className="transition-all transform -translate-y-60 opacity-0 group-hover:opacity-100 group-hover:-translate-y-100">
+                <p className="pb-4">Building Neural Nets from Scratch</p>
+                <p>
+                  A tiny scalar-valued autograd engine from scratch with Rust, inspired by Andrej Karpathy's micrograd project
+                </p>
+              </div> */}
             </a>
-            <a
-              className="shadow-lg bg-gradient-to-b hover:bg-gradient-to-l from-sky-50 to-sky-200 px-400 py-20 text-center border-none rounded-md"
-              href="#">
-              Predicting News Engagement
+            <a className="group text-center border-none rounded-md"
+              href="https://github.com/AmanChoudhary2020/News-Engagement" target="_blank">
+              <img class="group-hover:opacity-10 rounded-lg object-cover shadow-lg "
+                width={"100%"}
+                height={"100%"}
+                src="engagement.jpg" />
+              {/* <div className="transition-all transform -translate-y-60 opacity-0 group-hover:opacity-100 group-hover:-translate-y-100">
+                <p className="pb-4">
+                  Reading Beyond the Headline: Identifying and Understanding News Reader Feedback
+                </p>
+                <p>
+                  In-depth linguistic analysis of questions and comments posed to news stories on social media,
+                  with the goal of helping news organizations anticipate the information needs of their audience
+                </p>
+              </div> */}
             </a>
-            <a
-              className="shadow-lg bg-gradient-to-bl hover:bg-gradient-to-b from-sky-50 to-sky-200 px-400 py-20 text-center border-none rounded-md"
+            <a className="group text-center border-none rounded-md"
               href="#">
-              Neural Network and Scalar Backpropagation
+              <img class="group-hover:opacity-10 rounded-lg object-cover shadow-lg "
+                width={"100%"}
+                height={"100%"}
+                src="nn.jpg" />
+              <div className="transition-all transform -translate-y-60 opacity-0 group-hover:opacity-100 group-hover:-translate-y-100">
+                <p className="pb-4">A scalable search engine</p>
+                <p>
+                  Built using PageRank-based ranking system, Hadoop Streaming to create a segmented inverted index, and a distributed system for search
+                </p>
+              </div>
             </a>
           </div>
+
         </section>
-      </main>
-    </div>
+        <section id="Contact" className="py-10 text-center">
+          <h3 className="text-3xl pb-5 py-1">Let&apos;s Chat!</h3>
+          <h3 className="text-m">amanch@umich.edu</h3>
+          <h3 className="text-m">408-913-0300</h3>
+        </section>
+        <footer className="relative h-100 w-100">
+          <p className="text-xs pb-1 absolute bottom-0 right-0">Author: Aman Choudhary</p>
+        </footer>
+      </main >
+
+    </div >
   );
 }
