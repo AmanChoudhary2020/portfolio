@@ -78,12 +78,15 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Aman Choudhary
             </h2>
+
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Developer and designer.
             </h3>
+
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 mx-auto md:text-xl">
               Computer Science Student @ <a href="https://umich.edu/" target="_blank" className="text-teal-500">University of Michigan</a>
             </p>
+
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="mailto:amanch@umich.edu" target="_blank"><AiTwotoneMail /></a>
               <a href="https://www.linkedin.com/in/aman-ch/" target="_blank"><AiFillLinkedin /></a>
@@ -91,6 +94,7 @@ export default function Home() {
               <a href="https://www.instagram.com/a_man_photoz/" target="_blank"><AiFillInstagram /></a> */}
               <a href="https://github.com/AmanChoudhary2020/" target="_blank"><AiFillGithub /></a>
             </div>
+
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full  relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Fade arrows={false} duration={3000}>
                 {fadeImages.map((fadeImage, index) => (
@@ -100,6 +104,7 @@ export default function Home() {
                 ))}
               </Fade>
             </div>
+
           </div>
         </section>
 
@@ -109,10 +114,6 @@ export default function Home() {
             <h3 className="text-3xl py-1 pb-4 dark:text-white ">
               About Me
             </h3>
-
-            {/* <h3 className="text-l py-2 dark:text-white ">
-              University of Michigan &apos;24, B.S.E in Computer Science and Engineering
-            </h3> */}
 
             <p className="text-md leading-6 pb-2 text-gray-800 dark:text-gray-200">
               Born and raised in the heart of Silicon Valley, I am an aspiring software
@@ -191,7 +192,7 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-10">
             <a href="https://github.com/AmanChoudhary2020/News-Engagement" target="_blank" class="w-100 h-min relative group">
               <img src="engagement.jpg" height={"40%"} className="rounded-lg group-hover:opacity-10" />
-              <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-40 flex justify-center items-end">
+              <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-10 flex justify-center items-end">
                 <div>
                   <p className="font-bold leading-5 pb-1">Predicting News Reader Feedback with Deep Learning</p>
                   <p>In-depth linguistic analysis of questions and comments posed to news stories
@@ -202,14 +203,12 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="https://github.com/AmanChoudhary2020/search-engine" target="_blank" class="w-100 h-min relative group">
+            <a href="https://github.com/AmanChoudhary2020/nn-from-scratch" target="_blank" class="w-100 h-min relative group">
               <img src="nn.jpg" className="object-fill h-85 w-full rounded-lg group-hover:opacity-10 flex-1" />
-              <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-40 flex justify-center items-end">
+              <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-10 flex justify-center items-end">
                 <div>
-                  <p className="font-bold leading-5 pb-1">Scalable Search Engine</p>
-                  <p>Built a scalable search engine using PageRank-based ranking system, Hadoop
-                    Streaming to create a segmented inverted index, and a distributed system for
-                    search
+                  <p className="font-bold leading-5 pb-1">Automatic Differentiation Engine for Neural Network Training</p>
+                  <p>A tiny Autograd engine that implements scalar backpropagation in Rust with a small neural networks library on top of it with a PyTorch-like API
                   </p>
                 </div>
               </div>
@@ -217,7 +216,7 @@ export default function Home() {
 
             <a href="https://github.com/AmanChoudhary2020/search-engine" target="_blank" class="w-100 h-min relative group">
               <img src="engine.jpg" className="object-fill h-85 w-full rounded-lg group-hover:opacity-10 flex-1" />
-              <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-40 flex justify-center items-end">
+              <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-20 flex justify-center items-end">
                 <div>
                   <p className="font-bold leading-5 pb-1">Scalable Search Engine</p>
                   <p>Built a scalable search engine using PageRank-based ranking system, Hadoop
@@ -227,41 +226,20 @@ export default function Home() {
                 </div>
               </div>
             </a>
-
-
-            {/* <a className="text-center flex-1"
-              href="https://github.com/AmanChoudhary2020/nn-from-scratch" target="_blank">
-              <div className="w-100 relative group">
-                <img src="engagement.jpg" width={"100%"}
-                  height={"100%"} className="group-hover:opacity-10 rounded-lg shadow-medium" />
-                <div className="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-20 items-center flex justify-center">
-                  A tiny scalar-valued autograd engine from scratch with Rust, inspired by Andrej Karpathy's micrograd project
-                </div>
-              </div>
-            </a>
-
-            <a className="text-center flex-1"
-              href="https://github.com/AmanChoudhary2020/nn-from-scratch" target="_blank">
-              <div className="w-100 relative group">
-                <img src="engine.jpg" width={"100%"}
-                  height={"100%"} className="group-hover:opacity-10 rounded-lg shadow-medium" />
-                <div className="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-30 items-center flex justify-center">
-                  A tiny scalar-valued autograd engine from scratch with Rust, inspired by Andrej Karpathy's micrograd project
-                </div>
-              </div>
-            </a> */}
           </div>
-
         </section>
+
         <section id="Contact" className="dark:text-gray-200 py-10 text-center">
           <h3 className="text-3xl pb-5 py-1">Let&apos;s Chat!</h3>
           <h3 className="text-m">amanch@umich.edu</h3>
           <h3 className="text-m">408-913-0300</h3>
           <h3 className="text-m">https://www.linkedin.com/in/aman-ch/</h3>
         </section>
+
         <footer className="relative h-100 w-100 dark:text-gray-200">
           <p className="text-xs pb-1 absolute bottom-0 right-0">Author: Aman Choudhary</p>
         </footer>
+
       </main >
 
     </div >
