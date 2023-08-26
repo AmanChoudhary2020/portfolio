@@ -26,7 +26,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   const fadeImages = [
-    "AmanPhoto1.jpg", "AmanPhoto2.jpg", "AmanPhoto3.jpg"
+    "AmanPhoto1.jpg", "AmanPhoto2.jpg", "AmanPhoto3.jpg", "AmanPhoto4.jpg", "AmanPhoto5.jpg"
   ];
 
   return (
@@ -34,14 +34,14 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <a href="#" className="text-xl">Aman Choudhary</a>
+            <p className="text-xl">Aman Choudhary</p>
             <ul className="flex items-center">
               <li className="text-lg px-3 border-none">
                 <a href="#AboutMe">About Me</a>
               </li>
               <li className="text-lg px-3 border-none">
                 <a href="#WorkExperience">
-                  Work Experience
+                  Internships
                 </a>
               </li>
               <li className="text-lg px-3 border-none">
@@ -54,11 +54,11 @@ export default function Home() {
                   Contact
                 </a>
               </li>
-              <li className="text-lg px-3 border-none">
+              {/* <li className="text-lg px-3 border-none">
                 <Link href="/music" className="">
                   Music
                 </Link>
-              </li>
+              </li> */}
               <li className="text-lg px-3 border-none">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -90,8 +90,6 @@ export default function Home() {
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="mailto:amanch@umich.edu" target="_blank"><AiTwotoneMail /></a>
               <a href="https://www.linkedin.com/in/aman-ch/" target="_blank"><AiFillLinkedin /></a>
-              {/* <a href="https://www.youtube.com/channel/UCc6UbZ6n4gCH5CDuyPPfjwg" target="_blank"><AiFillYoutube /></a>
-              <a href="https://www.instagram.com/a_man_photoz/" target="_blank"><AiFillInstagram /></a> */}
               <a href="https://github.com/AmanChoudhary2020/" target="_blank"><AiFillGithub /></a>
             </div>
 
@@ -110,24 +108,33 @@ export default function Home() {
 
         <section className="mt:10">
           {/* ABOUT ME */}
-          <div id="AboutMe" className="pb-3">
-            <h3 className="text-3xl py-1 pb-4 dark:text-white ">
-              About Me
-            </h3>
-
-            <p className="text-md leading-6 pb-2 text-gray-800 dark:text-gray-200">
-              Born and raised in the heart of Silicon Valley, I am an aspiring software
-              developer seeking full-time software engineering roles in a fast-growing
-              and exciting environment. I have interest and experience full stack development,
-              data engineering, and machine learning.
-            </p>
-            <p className="dark:text-gray-200">In my free time, I enjoy playing guitar and
-              shooting photography &#x1F4F7;. Check out my guitar solo on a <a href="https://www.youtube.com/watch?v=CQI5q4grxjA&t=88s" target="_blank" className="text-teal-500 hover:underline">tune</a> my buddies and I wrote!</p>
+          <div id="AboutMe" class="dark:text-gray-200 pb-4 pt-2 grid grid-cols-2 divide-x">
+            <div className="flex items-center pr-3">
+              <h3 className="dark:text-pink-200 text-center font-bold pt-5 text-3xl py-1 pb-4 dark:text-white ">
+                I&apos;m Aman, an avid programmer, developer, music producer, photographer, and more!
+              </h3>
+            </div>
+            <div className="pl-6">
+              <p className="text-md text-center leading-6 text-lg pb-4 text-gray-800 dark:text-gray-200">
+                Born and raised in the heart of Silicon Valley, I am an aspiring software
+                developer studying computer science and music at the University of Michigan! I have
+                interests in distributed systems, natural language processing, and full stack development.
+              </p>
+              <p className="pb-2 dark:text-gray-200">In my free time, I enjoy playing guitar and
+                shooting photography &#x1F4F7;. Check out my guitar solo on a <a href="https://www.youtube.com/watch?v=CQI5q4grxjA&t=88s" target="_blank" className="text-teal-500 hover:underline">tune</a> my buddies and I wrote!</p>
+              <p className="pb-2">If my solo somehow wasn&apos;t enough for you, check out my YouTube channel (and my photography while you&apos;re at it):</p>
+              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                <a href="https://www.youtube.com/channel/UCc6UbZ6n4gCH5CDuyPPfjwg" target="_blank"><AiFillYoutube /></a>
+                <a href="https://www.instagram.com/a_man_photoz/" target="_blank"><AiFillInstagram /></a>
+              </div>
+              <p className="pb-2">Oh, and, if you enjoyed that and want to learn how to be an awesome rockstar like me, <span className="text-lime-700">I teach guitar lessons!</span> Shoot me an email at:</p>
+              <p className="text-center"><span className="text-amber-600">choudhary11aman@gmail.com</span></p>
+            </div>
           </div>
 
           {/* WORK EXPERIENCE */}
           <h3 id="WorkExperience" className="text-3xl py-1 dark:text-white">
-            Work Experience
+            Internships
           </h3>
 
           <div className="lg:flex gap-10">
@@ -148,7 +155,7 @@ export default function Home() {
               </h3>
             </a>
             <a href="https://www.criteo.com/" target="_blank" className="dark:border-solid dark:border-slate-50 dark:border-2 dark:bg-opacity-0 dark:text-white hover:scale-105 text-center p-5 shadow-lg rounded-xl dark:bg-white flex-1">
-              <div className="mx-auto pt-6 w-20 h-20">
+              <div className="pt-5 mx-auto w-20 h-20">
                 <Image src={criteo}
                   className="rounded-lg object-cover"
                   width={"100%"}
@@ -167,7 +174,7 @@ export default function Home() {
               </h3>
             </a>
             <a href="https://www.trashbots.co/" target="_blank" className="dark:border-solid dark:border-slate-50 dark:border-2 dark:bg-opacity-0 dark:text-white hover:scale-105 text-center p-5 shadow-lg rounded-xl dark:bg-white flex-1">
-              <div className="mx-auto pt-6 w-20 h-20">
+              <div className="mx-auto w-20 h-20">
                 <Image src={trashbots}
                   className="rounded-lg object-cover"
                   width={"100%"}
@@ -191,13 +198,13 @@ export default function Home() {
           <h3 className="text-3xl pb-5 py-1">Projects</h3>
           <div className="grid grid-cols-3 gap-10">
             <a href="https://github.com/AmanChoudhary2020/News-Engagement" target="_blank" class="w-100 h-min relative group">
-              <img src="engagement.jpg" height={"40%"} className="rounded-lg group-hover:opacity-10" />
+              <img src="engagement.jpg" height={"40%"} className="object-fill h-85 w-full rounded-lg group-hover:opacity-10 flex-1" />
               <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-10 flex justify-center items-end">
                 <div>
                   <p className="font-bold leading-5 pb-1">Predicting News Reader Feedback with Deep Learning</p>
-                  <p>In-depth linguistic analysis of questions and comments posed to news stories
-                    on social media, with the goal of helping news organizations anticipate the
-                    information needs of their audience
+                  <p>In-depth <span className="text-teal-600">linguistic analysis</span> of questions and comments posed to news stories
+                    on social media, with the goal of helping news organizations <span className="text-teal-600">anticipate the
+                      information needs of their audience</span>
                   </p>
                 </div>
               </div>
@@ -208,7 +215,7 @@ export default function Home() {
               <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-10 flex justify-center items-end">
                 <div>
                   <p className="font-bold leading-5 pb-1">Automatic Differentiation Engine for Neural Network Training</p>
-                  <p>A tiny Autograd engine that implements scalar backpropagation in Rust with a small neural networks library on top of it with a PyTorch-like API
+                  <p>A tiny Autograd engine that implements <span className="text-orange-600">scalar backpropagation</span> in Rust, and a small <span className="text-orange-600">neural networks library</span> on top of it with a PyTorch-like API
                   </p>
                 </div>
               </div>
@@ -216,12 +223,12 @@ export default function Home() {
 
             <a href="https://github.com/AmanChoudhary2020/search-engine" target="_blank" class="w-100 h-min relative group">
               <img src="engine.jpg" className="object-fill h-85 w-full rounded-lg group-hover:opacity-10 flex-1" />
-              <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-20 flex justify-center items-end">
+              <div class="opacity-0 group-hover:opacity-100 duration-300 text-center absolute inset-x-0 top-10 flex justify-center items-end">
                 <div>
                   <p className="font-bold leading-5 pb-1">Scalable Search Engine</p>
-                  <p>Built a scalable search engine using PageRank-based ranking system, Hadoop
-                    Streaming to create a segmented inverted index, and a distributed system for
-                    search
+                  <p>Built a scalable search engine using <span className="text-pink-600">PageRank</span> ranking system, <span className="text-pink-600">segmented inverted
+                    index</span> of web pages using pipeline of MapReduce programs, and <span className="text-pink-600">distributed system</span> of index
+                    servers (REST API) and search servers (server-side dynamic app) for returning search results
                   </p>
                 </div>
               </div>
@@ -230,10 +237,15 @@ export default function Home() {
         </section>
 
         <section id="Contact" className="dark:text-gray-200 py-10 text-center">
-          <h3 className="text-3xl pb-5 py-1">Let&apos;s Chat!</h3>
-          <h3 className="text-m">amanch@umich.edu</h3>
+          <h3 className="text-3xl pb-2 py-1">Let&apos;s Chat!</h3>
+          {/* <h3 className="text-m">amanch@umich.edu</h3>
           <h3 className="text-m">408-913-0300</h3>
-          <h3 className="text-m">https://www.linkedin.com/in/aman-ch/</h3>
+          <h3 className="text-m">https://www.linkedin.com/in/aman-ch/</h3> */}
+          <h3 className="text-m">408-913-0300</h3>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <a href="mailto:amanch@umich.edu" target="_blank"><AiTwotoneMail /></a>
+            <a href="https://www.linkedin.com/in/aman-ch/" target="_blank"><AiFillLinkedin /></a>
+          </div>
         </section>
 
         <footer className="relative h-100 w-100 dark:text-gray-200">
