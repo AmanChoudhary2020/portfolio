@@ -114,21 +114,20 @@ export default function Home() {
                 I&apos;m Aman, an avid programmer, developer, music producer, photographer, and more!
               </h3>
             </div>
-            <div className="pl-6">
+            <div className="pl-6 pt-7 pb-7">
               <p className="text-md text-center leading-6 text-lg pb-4 text-gray-800 dark:text-gray-200">
                 Born and raised in the heart of Silicon Valley, I am an aspiring software
                 developer studying computer science and music at the University of Michigan! I have
                 interests in distributed systems, natural language processing, and full stack development.
               </p>
               <p className="pb-2 dark:text-gray-200">In my free time, I enjoy playing guitar and
-                shooting photography &#x1F4F7;. Check out my guitar solo on a <a href="https://www.youtube.com/watch?v=CQI5q4grxjA&t=88s" target="_blank" className="text-teal-500 hover:underline">tune</a> my buddies and I wrote!</p>
-              <p className="pb-2">If my solo somehow wasn&apos;t enough for you, check out my YouTube channel (and my photography while you&apos;re at it):</p>
+                shooting photography &#x1F4F7;. Check out my guitar solo on a <a href="https://www.youtube.com/watch?v=CQI5q4grxjA&t=88s" target="_blank" className="text-teal-500 hover:underline">tune</a> my buddies and I wrote!
+                If my solo somehow isn&apos;t enough for you, check out my YouTube channel (and my photography while you&apos;re at it):</p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <a href="https://www.youtube.com/channel/UCc6UbZ6n4gCH5CDuyPPfjwg" target="_blank"><AiFillYoutube /></a>
                 <a href="https://www.instagram.com/a_man_photoz/" target="_blank"><AiFillInstagram /></a>
               </div>
-              <p className="pb-2">Oh, and, if you enjoyed that and want to learn how to be an awesome rockstar like me, <span className="text-lime-700">I teach guitar lessons!</span> Shoot me an email at:</p>
-              <p className="text-center"><span className="text-amber-600">choudhary11aman@gmail.com</span></p>
+              <p className="pb-2">Oh, and if you enjoyed that and want to learn how to be an awesome rockstar like me, <span className="text-lime-500">I teach guitar lessons!</span> Shoot me an email at: choudhary11aman@gmail.com</p>
             </div>
           </div>
 
@@ -238,9 +237,6 @@ export default function Home() {
 
         <section id="Contact" className="dark:text-gray-200 py-10 text-center">
           <h3 className="text-3xl pb-2 py-1">Let&apos;s Chat!</h3>
-          {/* <h3 className="text-m">amanch@umich.edu</h3>
-          <h3 className="text-m">408-913-0300</h3>
-          <h3 className="text-m">https://www.linkedin.com/in/aman-ch/</h3> */}
           <h3 className="text-m">408-913-0300</h3>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <a href="mailto:amanch@umich.edu" target="_blank"><AiTwotoneMail /></a>
