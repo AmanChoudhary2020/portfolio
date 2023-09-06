@@ -2,7 +2,6 @@
 
 // React/Next.js
 import { useState } from "react";
-import Link from 'next/link'
 import 'swiper/css'
 import Image from "next/image";
 
@@ -109,25 +108,26 @@ export default function Home() {
         <section className="mt:10">
           {/* ABOUT ME */}
           <div id="AboutMe" class="dark:text-gray-200 pb-4 pt-2 grid grid-cols-2 divide-x">
-            <div className="flex items-center pr-3">
+            <div className="pl-6 pt-7 pb-7">
               <h3 className="dark:text-pink-200 text-center font-bold pt-5 text-3xl py-1 pb-4 dark:text-white ">
                 I&apos;m Aman, an avid programmer, developer, music producer, photographer, and more!
               </h3>
-            </div>
-            <div className="pl-6 pt-7 pb-7">
               <p className="text-md text-center leading-6 text-lg pb-4 text-gray-800 dark:text-gray-200">
                 Born and raised in the heart of Silicon Valley, I am an aspiring software
                 developer studying computer science and music at the University of Michigan! I have
                 interests in distributed systems, natural language processing, and full stack development.
               </p>
-              <p className="pb-2 dark:text-gray-200">In my free time, I enjoy playing guitar and
-                shooting photography &#x1F4F7;. Check out my guitar solo on a <a href="https://www.youtube.com/watch?v=CQI5q4grxjA&t=88s" target="_blank" className="text-teal-500 hover:underline">tune</a> my buddies and I wrote!
+            </div>
+            <div className="pl-6 pt-7 pb-7">
+
+              <p className="pb-2 dark:text-gray-200">In my free time, I enjoy playing guitar &#x1F3B8; and
+                doing photography &#x1F4F7;. Check out my guitar solo on a <a href="https://www.youtube.com/watch?v=CQI5q4grxjA&t=88s" target="_blank" className="text-teal-500 hover:underline">tune</a> my buddies and I wrote!
                 If my solo somehow isn&apos;t enough for you, check out my YouTube channel (and my photography while you&apos;re at it):</p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <a href="https://www.youtube.com/channel/UCc6UbZ6n4gCH5CDuyPPfjwg" target="_blank"><AiFillYoutube /></a>
                 <a href="https://www.instagram.com/a_man_photoz/" target="_blank"><AiFillInstagram /></a>
               </div>
-              <p className="pb-2">Oh, and if you enjoyed that and want to learn how to be an awesome rockstar like me, <span className="text-lime-500">I teach guitar lessons!</span> Shoot me an email at: choudhary11aman@gmail.com</p>
+              <p className="pb-2">Oh, and if you enjoyed that and want to learn how to be an awesome rockstar like me, <a href="https://www.youtube.com/channel/UCc6UbZ6n4gCH5CDuyPPfjwg" target="_blank" className="text-lime-500 hover:underline">I teach guitar lessons!</a> Shoot me an email at: choudhary11aman@gmail.com</p>
             </div>
           </div>
 
